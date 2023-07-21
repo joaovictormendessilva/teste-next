@@ -4,12 +4,12 @@ interface IFooterProps {
   modes: 'Mode1' | 'Mode2'
 }
 
-export const Footer = ({ modes }: IFooterProps) => {
+export function Footer({ modes }: IFooterProps) {
   return (
-    <footer className={styles.footer}>
+    <b className={styles.header}>
       {modes === 'Mode1' && <p style={{ color: "black" }} >Footer</p>}
 
       {modes === 'Mode2' && <p style={{ color: "red" }}>Footer</p>}
-    </footer>
+    </b>
   )
 }
