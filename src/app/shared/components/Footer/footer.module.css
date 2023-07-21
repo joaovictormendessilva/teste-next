@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  width: 100%;
+  background-color: red;
+}
+
+.header p{
+  display: flex;
+  width: 100%;
+  background-color: red;
+}
+
+.header p a{
+  display: flex;
+  width: 100%;
+  background-color: red;
+}
