@@ -10,7 +10,7 @@ export default function Home() {
 
   // const ip = GetIp()
 
-  const ip = networkInfo.Ethernet[3].address
+  const address = networkInfo?.Ethernet?.[3]?.address ?? 'Valor Padrão';
 
   return (
     <main>
@@ -20,7 +20,7 @@ export default function Home() {
       {/* <Suspense fallback={<p>Loading</p>}>
         <pre>{JSON.stringify(data, null, 2)}</pre>
       </Suspense> */}
-      <h2>{ip}</h2>
+      <h2>{address}</h2>
     </main>
   )
 }
