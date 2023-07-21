@@ -5,6 +5,6 @@ const networkInfo = os.networkInterfaces();
 
 export default function GetIp() {
 
-  return networkInfo.Ethernet[3]!.address
+  return networkInfo.Ethernet[3].address
 
 }
