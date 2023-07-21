@@ -3,11 +3,11 @@ import Link from 'next/link'
 import { Suspense } from 'react'
 import GetIp from './getip';
 
-export default async function Home() {
+export default function Home() {
   // const response = await fetch('https://jsonplaceholder.typicode.com/photos')
   // const data = await response.json()
 
-  const ip = await GetIp()
+  const ip = GetIp()
 
   return (
     <main>
