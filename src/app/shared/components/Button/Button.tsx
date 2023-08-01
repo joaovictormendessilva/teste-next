@@ -2,5 +2,9 @@
 
 export function Button() {
 
-  return <button>Emitir alerta</button>
+  function sla() {
+    console.log("Olá")
+  }
+
+  return <button onClick={sla}>Emitir alerta</button>
 }
